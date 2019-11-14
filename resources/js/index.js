@@ -9,8 +9,8 @@ loginForm.addEventListener('submit', function getLoginInfo(e){
 })
 
 function verifyAccount(loginForm){
-  fetch(`${loginForm.action}`,{
-    method: `POST`,
+  fetch(loginForm.action,{
+    method: "POST",
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json'
